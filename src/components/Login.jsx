@@ -1,7 +1,7 @@
 
 import { useContext } from "react"
 
-import { AuthContext } from "../context/AuthContext"
+import { AuthContext } from "../Context/AuthContext"
 import { useNavigate } from "react-router-dom"
 
 
@@ -26,7 +26,7 @@ export const Login = () => {
       />
       <button onClick={()=>{
              handleAuth(true)
-             navigate('/employees' ,{replace:true})
+             navigate('/employees' )
          }}>Submit</button>
     </form>
   );
